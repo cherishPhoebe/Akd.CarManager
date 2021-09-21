@@ -4,15 +4,17 @@ using Akd.CarManager.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace Akd.CarManager.Migrations
 {
     [DbContext(typeof(CarManagerDbContext))]
-    partial class CarManagerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210921095050_created_account_entity")]
+    partial class created_account_entity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
